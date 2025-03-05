@@ -2,11 +2,11 @@ start
 new cash number
 set cash 1000
 new cost number
-set number 762
-if (cash>cost)
-log string "Денег на товар хватает."
+set cost 762
+if (cash > cost)
+    log string "Денег на товар хватает."
 close
-if (cost>cash)
-log string "Денег на товар НЕ хватает."
+if (cost > cash)
+    log string "Денег на товар НЕ хватает."
 close
 finish
