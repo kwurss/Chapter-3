@@ -9,23 +9,18 @@ new d number
 set d 30
 new x number
 set x 15
-if (x > a)
-  log string "x > a"
-  if (a > b)
-    log string "x > a > b"
-    if (b > c)
-      log string "x > a > b > c"
-
+if (d > x)
+    log string "d > x"
 else
-  log string "a > x"
-if (x > b)
-  log string "x > b > a"
-else
-  log string "b > x > a"
-if (x > c)
-  log string "x > c > b > a"
-else
-  log string "x > a"
-
+    if (c > x)
+        log string "c > x > d"
+    else
+        if (b > x)
+            log string "b > x > c"
+        else
+            if (a > x)
+                log string "a > x > b"
+            else
+                log string "x > a"
 close
-close
+finish
