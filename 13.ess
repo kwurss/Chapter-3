@@ -4,18 +4,18 @@ set tudasyuda 0
 new AB number
 set AB 5
 set tudasyuda tudasyuda + AB
-log string "Путь от А до В занимает ">>tudasyuda>>" минут."
+log string "Путь от А до В занимает " >> tudasyuda >> " минут."
 new BC number
 set BC 15 + 10
 set tudasyuda tudasyuda + BC
-log string "Путь от А до C занимает ">>tudasyuda>>" минут."
+log string "Путь от А до C занимает " >> tudasyuda >> " минут."
 new CD number
 set CD 7
 set tudasyuda tudasyuda + CD
-log string "Путь от А до D занимает ">>tudasyuda>>" минут."
+log string "Путь от А до D занимает " >> tudasyuda >> " минут."
 new AD number
 set AD 40
-log string "Путь с промежутками занимает ">>tudasyuda>>" минут, а прямой - ">>AD>>" минут."
+log string "Путь с промежутками занимает " >> tudasyuda >> " минут, а прямой - " >> AD >> " минут."
 if (tudasyuda > AD)
   log  string "Путь с автобусом занимает БОЛЬШЕ времени."
 close
